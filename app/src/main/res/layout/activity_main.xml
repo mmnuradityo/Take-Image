@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/take_image_list_container"/>
+
+    <LinearLayout
+        android:id="@+id/container_imageCropper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_container"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Cropper : "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch_cropper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_testListFile"
+        android:layout_below="@+id/container_imageCropper"
+        android:layout_margin="@dimen/baseStyle_spaceNormal"
+        android:padding="@dimen/baseStyle_spaceNormal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_image" />
+
+    <com.mmnuradityo.basestyle.view.ButtonRounded
+        android:id="@+id/btn_testListFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:text="Test List File" />
+
+</RelativeLayout>

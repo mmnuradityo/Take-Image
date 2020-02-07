@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="takeimage_appbarSize">58dp</dimen>
+    <dimen name="takeimage_spaceNormal">12dp</dimen>
+    <dimen name="takeimage_btnImageSize">40dp</dimen>
+    <dimen name="takeimage_itemImageSize">90dp</dimen>
+
+    <!--  text  -->
+    <dimen name="takeimage_textMedium">12sp</dimen>
+
+</resources>

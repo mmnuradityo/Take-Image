@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public name="takeimagelist_app_name" type="string"/>
+    <public name="takeimagelist_public_string" type="string"/>
+    <public name="take_image_list_container" type="layout"/>
+</resources>

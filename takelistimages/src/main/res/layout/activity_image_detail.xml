@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ui.activity.ImageDetailActivity">
+
+    <com.mmnuradityo.imagezoomable.view.ImageZoomable
+        android:id="@+id/image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_DetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/takeimage_appbarSize"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/takeimage_appbarSize"
+            android:layout_height="@dimen/takeimage_appbarSize"
+            android:padding="@dimen/baseStyle_spaceNormal"
+            android:src="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingEnd="@dimen/baseStyle_spaceMedium"
+            android:paddingRight="@dimen/baseStyle_spaceMedium"
+            android:text="Take Image"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/baseStyle_textLarge"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/takeimage_appbarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_done"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/takeimage_appbarSize"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="@dimen/takeimage_appbarSize"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/ic_done"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/baseStyle_spaceSmaller"
+                android:layout_weight="2"
+                android:text="Done"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/takeimage_textMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_change"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/takeimage_appbarSize"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="@dimen/takeimage_appbarSize"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/ic_camera"
+                android:tint="@android:color/white"
+                android:tintMode="src_atop"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/baseStyle_spaceSmaller"
+                android:layout_weight="2"
+                android:text="Change Image"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/takeimage_textMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/takeimage_appbarSize"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="@dimen/takeimage_appbarSize"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/ic_close"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/baseStyle_spaceSmaller"
+                android:layout_weight="2"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/takeimage_textMedium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
